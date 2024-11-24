@@ -317,6 +317,11 @@
   background-image: url("../images/plus1.png");
 }
 
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .accordion-item {
   border-bottom: 1px solid #323232;
 }
@@ -417,6 +422,7 @@
   .heading {
     font-size: 36px;
     max-width: 550px;
+    letter-spacing: 0;
   }
 
   .description {
@@ -481,11 +487,6 @@
     gap: 20px;
   }
 
-  .testimonial-image {
-    min-width: 250px;
-    height: 300px;
-  }
-
   .testimonial-text {
     font-size: 18px;
   }
@@ -494,6 +495,69 @@
     font-size: 16px;
   }
   /* testimonial ends */
+
+  .custom-section {
+    padding: 80px 0;
+  }
+
+  .content-container {
+    max-width: 700px;
+    margin-bottom: 30px;
+  }
+
+  .image-container {
+    max-width: 180px;
+    left: 30px;
+    bottom: 10px;
+  }
+
+  .faq-section {
+    padding: 90px 0;
+  }
+
+  .accordion {
+    max-width: 900px;
+    margin-top: 50px;
+  }
+
+  .accordion-title {
+    font-size: 22px;
+  }
+
+  .accordion-body {
+    font-size: 16px;
+  }
+
+  .custom-footer {
+    padding: 50px 40px;
+    gap: 80px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+
+  .footer-social {
+    gap: 12px;
+  }
+
+  .learning .section-title {
+    margin-bottom: 90px;
+  }
+
+  .fixed-image {
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -581,20 +645,16 @@
   }
 
   .testimonial-slider {
-    padding-left: 20px;
+    margin-top: 40px;
+    padding: 0 30px;
   }
 
   .testimonial-card {
-    padding: 15px;
+    padding: 16px;
     margin: 5px;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-  }
-
-  .testimonial-image {
-    min-width: 220px;
-    height: 250px;
   }
 
   .testimonial-text {
@@ -605,6 +665,75 @@
     font-size: 14px;
   }
   /* testimonial ends */
+
+  .custom-section {
+    padding: 60px 0 10px;
+  }
+
+  .content-container {
+    max-width: 600px;
+    margin-bottom: 25px;
+  }
+
+  .image-container {
+    position: relative;
+    max-width: 160px;
+    margin-top: 40px;
+  }
+
+  .faq-section {
+    padding: 70px 0;
+  }
+
+  .accordion {
+    max-width: 90%;
+    margin-top: 40px;
+  }
+
+  .accordion-title {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .accordion-body {
+    font-size: 15px;
+  }
+
+  .accordion-button::after {
+    --bs-accordion-btn-icon-width: 21px;
+    --bs-accordion-btn-icon-height: 21px;
+  }
+
+  .custom-footer {
+    padding: 40px 20px;
+    gap: 60px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .learning .section-title {
+    margin-bottom: 70px;
+  }
+
+  .fixed-image {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -691,20 +820,14 @@
   }
 
   .testimonial-slider {
-    padding-left: 10px;
+    padding: 0 16px;
+    margin-top: 30px;
   }
 
   .testimonial-card {
-    padding: 10px;
     margin: 5px;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-  }
-
-  .testimonial-image {
-    min-width: 200px;
-    height: 230px;
   }
 
   .testimonial-text {
@@ -715,4 +838,73 @@
     font-size: 14px;
   }
   /* testimonial ends */
+
+  .custom-section {
+    padding: 40px 0;
+  }
+
+  .content-container {
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    max-width: 140px;
+  }
+
+  .faq-section {
+    padding: 50px 0;
+  }
+
+  .accordion {
+    margin-top: 30px;
+    --bs-accordion-btn-padding-x: 10px;
+  }
+
+  .accordion-title {
+    font-size: 18px;
+  }
+
+  .accordion-button::after {
+    --bs-accordion-btn-icon-width: 18px;
+    --bs-accordion-btn-icon-height: 18px;
+  }
+
+  .accordion-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .custom-footer {
+    padding: 30px 15px;
+    gap: 50px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .learning .section-title {
+    margin-bottom: 50px;
+  }
+
+  .fixed-image {
+    max-width: 300px;
+  }
 }
