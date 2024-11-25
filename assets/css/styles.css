@@ -39,6 +39,7 @@
   font-weight: bold;
   letter-spacing: -0.36px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
 }
 
 .btn-common:hover {
@@ -98,6 +99,95 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* categories starts */
+.content-wrapper {
+  display: flex;
+  margin: 110px auto;
+  max-width: 1200px;
+  background-color: #eeffbf;
+  border-radius: 15px;
+  padding: 30px;
+  gap: 30px;
+}
+
+.content-left {
+  position: relative;
+  width: 54%;
+  z-index: 2;
+}
+.content-left-text {
+  /* margin: auto;
+  width: 80%; */
+  width: 100%;
+}
+
+.content-info {
+  /* height: 100vh; */
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-info h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: -0.64px;
+  margin-bottom: 16px;
+  max-width: 500px;
+}
+
+.content-info p {
+  max-width: 375px;
+  font-size: 1.125rem;
+  line-height: 130%;
+  margin-bottom: 24px;
+}
+
+.content-right {
+  width: 46%;
+  height: auto;
+}
+
+.content-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  width: 100%;
+  /* height: 100vh; */
+  height: 60vh;
+  top: 30px;
+}
+
+.content-image {
+  /* width: 40vw;
+  height: 30vw; */
+  max-width: 550px;
+  max-height: 510px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.content-img-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.content-img-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* categories ends */
 
 .categories-section {
   margin-top: 120px;
@@ -400,6 +490,96 @@
   object-fit: cover;
 }
 
+.div-block-9 .section-title {
+  color: #323232;
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  max-width: 768px;
+  margin: auto;
+}
+
+.stats_border._2 {
+  background: var(
+    --Linear,
+    linear-gradient(
+      0deg,
+      rgba(251, 230, 98, 0.9) 0.21%,
+      rgba(238, 238, 78, 0.9) 10.19%,
+      rgba(172, 254, 89, 0.9) 38.62%,
+      rgba(231, 255, 192, 0.9) 99.97%
+    )
+  ) !important;
+}
+
+.stats_border._3 {
+  background: var(
+    --red,
+    linear-gradient(
+      0deg,
+      rgba(202, 76, 85, 0.9) 0.71%,
+      rgba(216, 128, 150, 0.9) 56.33%,
+      rgba(167, 74, 156, 0.9) 99.97%
+    )
+  ) !important;
+}
+.stats_border._4 {
+  background: var(
+    --gradient-6,
+    linear-gradient(0deg, #74baf6 0.71%, #d8dbf7 45.6%, #cfe6fa 99.97%)
+  );
+}
+
+.learning-card-wrapper {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.learning-card {
+  max-width: 1199px;
+  border-radius: 15px;
+  background: #eeffbf;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.learning-card img {
+  max-width: 499px;
+  max-height: 510px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.learning-card h2 {
+  color: #323232;
+  font-family: Arial;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.64px;
+}
+
+.learning-card p {
+  color: #323232;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  margin-bottom: 22px;
+  margin-top: 16px;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .navbar {
@@ -558,9 +738,42 @@
   .fixed-image {
     max-width: 500px;
   }
+
+  .div-block-9 .section-title {
+    font-size: 36px; /* Adjust for tablets */
+    max-width: 640px; /* Narrow the width */
+  }
 }
 
 @media (max-width: 768px) {
+  .content-wrapper {
+    display: none;
+  }
+
+  .learning-card-wrapper {
+    display: flex;
+  }
+
+  .learning-card img {
+    max-width: 100%;
+    max-height: none;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .learning-card h2 {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+  }
+
+  .learning-card p {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 14px;
+  }
+
   .navbar {
     padding-left: 20px;
     padding-right: 20px;
@@ -734,9 +947,33 @@
   .fixed-image {
     max-width: 400px;
   }
+  .div-block-9 .section-title {
+    font-size: 32px; /* Adjust for smaller tablets */
+    max-width: 520px;
+  }
 }
 
 @media (max-width: 480px) {
+  .learning-card img {
+    width: 100%;
+    max-height: none;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .learning-card h2 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .learning-card p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
   .navbar {
     padding-left: 12px;
     padding-right: 12px;
@@ -906,5 +1143,106 @@
 
   .fixed-image {
     max-width: 300px;
+  }
+
+  .div-block-9 .section-title {
+    font-size: 28px; /* Adjust for mobile phones */
+    max-width: 90%; /* Use percentage for flexibility */
+  }
+}
+
+/* Base Styles for Learning Card */
+.learning-card img {
+  max-width: 499px;
+  max-height: 510px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.learning-card h2 {
+  color: #323232;
+  font-family: Arial;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.64px;
+}
+
+.learning-card p {
+  color: #323232;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 23.4px */
+  margin-bottom: 22px;
+  margin-top: 16px;
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .learning-card-wrapper {
+    display: block;
+  }
+
+  .learning-card {
+    max-width: 100%; /* Full width for each card */
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .learning-card img {
+    width: 100%;
+    max-height: none;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .learning-card h2 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .learning-card p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+}
+
+/* Extra Small Mobile Screens (375px and below) */
+@media (max-width: 375px) {
+
+  .learning-card img {
+    width: 100%;
+    max-height: none;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .learning-card h2 {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+  }
+
+  .learning-card p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .div-block-9 .section-title {
+    font-size: 24px; /* Adjust for very small mobile devices */
+    max-width: 90%; /* Keep it flexible for narrow screens */
   }
 }
