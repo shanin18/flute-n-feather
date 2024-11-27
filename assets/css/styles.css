@@ -538,6 +538,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 20px;
+  position: relative;
 }
 
 .learning-card {
@@ -548,6 +549,18 @@
   padding: 30px;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 0;
+}
+
+.learning-card:nth-child(2) {
+  background-color:#BFF2FF;
+}
+.learning-card:nth-child(3) {
+  background-color:#FFBFC9;
+}
+.learning-card:nth-child(4) {
+  background-color:#FFD1BF;
 }
 
 .learning-card img {
@@ -578,6 +591,12 @@
   line-height: 130%; /* 23.4px */
   margin-bottom: 22px;
   margin-top: 16px;
+}
+
+@media (max-width: 1350px) {
+  .testimonial-card {
+    flex-direction: column;
+  }
 }
 
 /* Responsive Styles */

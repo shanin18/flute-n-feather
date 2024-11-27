@@ -14,12 +14,6 @@
       href="./assets/css/plugins/owl.theme.default.min.css"
     />
     <link rel="stylesheet" href="./assets/css/plugins/aos.css" />
-    <!-- Link Swiper's CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/parallax.css" />
@@ -140,29 +134,47 @@
 
     <!-- parallax for mobile -->
     <section class="learning-card-wrapper">
-        <div class="learning-card">
-            <img src="./assets/images/category-1.png" alt="img">
-            <h2>Guided or Open-Ended Learning, Your Choice</h2>
-            <p class="">Whether following guided lessons or exploring freely, Flute adapts to your child’s learning style, empowering curiosity and creativity.</p>
+      <div class="learning-card">
+        <img src="./assets/images/category-1.png" alt="img" />
+        <h2>Inquiry-Based Learning for Growing Minds</h2>
+        <p>
+          Our platform sparks curiosity and critical thinking, helping kids explore topics they love in an engaging way.
+        </p>
 
-            <a href="#" class="btn-common">Try for free</a>
-        </div>
-        <div class="learning-card">
-            <img src="./assets/images/category-1.png" alt="img">
-            <h2>Guided or Open-Ended Learning, Your Choice</h2>
-            <p class="">Whether following guided lessons or exploring freely, Flute adapts to your child’s learning style, empowering curiosity and creativity.</p>
+        <a href="#" class="btn-common">Try for free</a>
+      </div>
+      <div class="learning-card">
+        <img src="./assets/images/category-2.png" alt="img" />
+        <h2>Parent-Controlled, Kid-Friendly AI</h2>
+        <p>
+          The Feather app lets parents monitor, customize, and ensure safe, screen-limited learning for their kids.
+        </p>
 
-            <a href="#" class="btn-common">Try for free</a>
-        </div>
-        <div class="learning-card">
-            <img src="./assets/images/category-1.png" alt="img">
-            <h2>Guided or Open-Ended Learning, Your Choice</h2>
-            <p class="">Whether following guided lessons or exploring freely, Flute adapts to your child’s learning style, empowering curiosity and creativity.</p>
+        <a href="#" class="btn-common">Try for free</a>
+      </div>
 
-            <a href="#" class="btn-common">Try for free</a>
-        </div>
+      <div class="learning-card">
+        <img src="./assets/images/category-1.png" alt="img" />
+        <h2>Voice-Based, Hands-Free Exploration</h2>
+        <p>
+          Flute’s voice-first design lets kids navigate topics and ask questions effortlessly, making learning intuitive and engaging.
+        </p>
+
+        <a href="#" class="btn-common">Try for free</a>
+      </div>
+
+      <div class="learning-card">
+        <img src="./assets/images/category-2.png" alt="img" />
+        <h2>Guided or Open-Ended Learning, Your Choice</h2>
+        <p>
+          Whether following guided lessons or exploring freely, Flute adapts to
+          your child’s learning style, empowering curiosity and creativity.
+        </p>
+
+        <a href="#" class="btn-common">Try for free</a>
+      </div>
     </section>
-
+    
     <!-- as reference -->
     <section class="section_home_stats custom">
       <div class="stats10_background-image-wrapper">
@@ -244,7 +256,6 @@
         </div>
       </div>
     </section>
-
     <section class="testimonial-section">
       <h2 class="section-title">What parents are saying</h2>
       <div class="testimonial-slider owl-carousel">
@@ -760,64 +771,6 @@
           },
         });
       });
-    </script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <script>
-      // Initialize Swiper
-      var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        spaceBetween: 0,
-        slidesPerView: 1,
-        on: {
-          slideChange: function () {
-            console.log("Slide changed to index:", swiper.activeIndex);
-          },
-        },
-      });
-
-      // Scroll effect with GSAP
-      let isScrolling = false;
-
-      window.addEventListener("wheel", function (event) {
-        if (isScrolling) return; // Prevent multiple scroll actions
-        isScrolling = true;
-
-        if (event.deltaY > 0) {
-          // Scroll down, slide to next
-          gsap.to(".swiper-wrapper", {
-            y: `-=${window.innerHeight}`,
-            duration: 0.5,
-            ease: "power2.inOut",
-            onComplete: () => {
-              swiper.slideNext();
-              resetScroll();
-            },
-          });
-        } else {
-          // Scroll up, slide to previous
-          gsap.to(".swiper-wrapper", {
-            y: `+=${window.innerHeight}`,
-            duration: 0.5,
-            ease: "power2.inOut",
-            onComplete: () => {
-              swiper.slidePrev();
-              resetScroll();
-            },
-          });
-        }
-      });
-
-      function resetScroll() {
-        setTimeout(() => {
-          isScrolling = false; // Allow next scroll after a short delay
-        }, 500);
-      }
     </script>
   </body>
 </html>

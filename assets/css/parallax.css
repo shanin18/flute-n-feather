@@ -2782,9 +2782,7 @@
   position: absolute;
   inset: 0%;
 }
-.image {
-  max-width: 50%;
-}
+
 .div-block-2 {
   position: sticky;
   top: 0;
