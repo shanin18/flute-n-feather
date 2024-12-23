@@ -554,13 +554,13 @@
 }
 
 .learning-card:nth-child(2) {
-  background-color:#BFF2FF;
+  background-color: #bff2ff;
 }
 .learning-card:nth-child(3) {
-  background-color:#FFBFC9;
+  background-color: #ffbfc9;
 }
 .learning-card:nth-child(4) {
-  background-color:#FFD1BF;
+  background-color: #ffd1bf;
 }
 
 .learning-card img {
@@ -593,13 +593,14 @@
   margin-top: 16px;
 }
 
+/* Responsive Styles */
+
 @media (max-width: 1350px) {
   .testimonial-card {
     flex-direction: column;
   }
 }
 
-/* Responsive Styles */
 @media (max-width: 1024px) {
   .navbar {
     padding-left: 40px;
@@ -1165,44 +1166,10 @@
   }
 
   .div-block-9 .section-title {
-    font-size: 28px; /* Adjust for mobile phones */
-    max-width: 90%; /* Use percentage for flexibility */
+    font-size: 28px;
+    max-width: 90%;
   }
-}
 
-/* Base Styles for Learning Card */
-.learning-card img {
-  max-width: 499px;
-  max-height: 510px;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  margin-bottom: 40px;
-}
-
-.learning-card h2 {
-  color: #323232;
-  font-family: Arial;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 38.4px */
-  letter-spacing: -0.64px;
-}
-
-.learning-card p {
-  color: #323232;
-  font-family: Arial;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 23.4px */
-  margin-bottom: 22px;
-  margin-top: 16px;
-}
-
-/* Mobile Screens (480px and below) */
-@media (max-width: 480px) {
   .learning-card-wrapper {
     display: block;
   }
@@ -1234,9 +1201,7 @@
   }
 }
 
-/* Extra Small Mobile Screens (375px and below) */
 @media (max-width: 375px) {
-
   .learning-card img {
     width: 100%;
     max-height: none;
@@ -1258,10 +1223,9 @@
   }
 }
 
-
 @media (max-width: 320px) {
   .div-block-9 .section-title {
-    font-size: 24px; /* Adjust for very small mobile devices */
-    max-width: 90%; /* Keep it flexible for narrow screens */
+    font-size: 24px;
+    max-width: 90%;
   }
 }
