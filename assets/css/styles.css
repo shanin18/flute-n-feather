@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   padding-left: 58px;
   padding-right: 58px;
   display: flex;
@@ -19,6 +19,95 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+
+.navbar {
+  padding-left: 58px;
+  padding-right: 58px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-item {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-icon,
+.close-icon {
+  font-size: 24px;
+  color: #05164d;
+  display: none;
+}
+
+.menu-toggle .menu-icon {
+  display: block;
+}
+
+.menu-toggle.active .menu-icon {
+  display: none;
+}
+
+.menu-toggle.active .close-icon {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+  }
+
+  .nav-item {
+    border-top: 1px solid #323232;
+    width: 100%;
+    font-size: 22px;
+    padding: 25px 12px;
+    border-bottom: 1px solid #323232;
+  }
+
+  .nav-links a:nth-child(2) {
+    display: block;
+    margin: 60px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 .btn-common {
@@ -32,8 +121,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 254px;
-  width: 100%;
+  width: 254px;
+
   border-radius: 10px;
   background-color: #323232;
   font-weight: bold;
@@ -1167,12 +1256,12 @@
     max-width: 140px;
   }
 
-  .btn-common {
+  /* .btn-common {
     font-size: 1rem;
     padding-left: 14px;
     padding-right: 14px;
     max-width: 200px;
-  }
+  } */
 
   .banner {
     padding-left: 20px;
@@ -1367,14 +1456,14 @@
     max-width: 120px;
   }
 
-  .btn-common {
+  /* .btn-common {
     font-size: 0.875rem;
     padding-left: 12px;
     padding-right: 12px;
     padding-top: 10px;
     padding-bottom: 10px;
     max-width: 145px;
-  }
+  } */
 
   .banner {
     padding-left: 12px;
