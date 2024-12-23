@@ -1400,7 +1400,6 @@
     max-width: 500px;
   }
 
-  /* categories starts */
   .categories-section {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -1425,9 +1424,7 @@
     max-width: 350px;
     max-height: 350px;
   }
-  /* categories ends */
 
-  /* testimonial starts */
   .section-title {
     font-size: 26px;
   }
@@ -1458,7 +1455,6 @@
   .testimonial-author {
     font-size: 14px;
   }
-  /* testimonial ends */
 
   .custom-section {
     padding: 40px 0;
@@ -1539,7 +1535,231 @@
   }
 
   .learning-card {
-    max-width: 100%; /* Full width for each card */
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .learning-card img {
+    width: 100%;
+    max-height: none;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .learning-card h2 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .learning-card p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+}
+
+/* @media (max-width: 480px) {
+  .learning-card img {
+    width: 100%;
+    max-height: none;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .learning-card h2 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+  }
+
+  .learning-card p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .logo-container {
+    max-width: 120px;
+  }
+
+  .btn-common {
+    font-size: 0.875rem;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 145px;
+  }
+
+  .banner {
+    padding-left: 12px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .banner-text {
+    gap: 24px;
+  }
+
+  .heading {
+    font-size: 24px;
+    max-width: 350px;
+  }
+
+  .description {
+    max-width: 350px;
+    font-size: 1rem;
+  }
+
+  .banner-image {
+    max-width: 500px;
+  }
+
+  .categories-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .category-item {
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .category-title {
+    font-size: 20px;
+    max-width: 350px;
+  }
+
+  .category-description {
+    max-width: 280px;
+    font-size: 1rem;
+  }
+
+  .category-image-container {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .testimonial-section {
+    padding: 40px 0;
+  }
+
+  .testimonial-title {
+    font-size: 1.25rem;
+  }
+
+  .testimonial-slider {
+    padding: 0 16px;
+    margin-top: 30px;
+  }
+
+  .testimonial-card {
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+  }
+
+  .custom-section {
+    padding: 40px 0;
+  }
+
+  .content-container {
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .image-container {
+    max-width: 140px;
+  }
+
+  .faq-section {
+    padding: 50px 0;
+  }
+
+  .accordion {
+    margin-top: 30px;
+    --bs-accordion-btn-padding-x: 10px;
+  }
+
+  .accordion-title {
+    font-size: 18px;
+  }
+
+  .accordion-button::after {
+    --bs-accordion-btn-icon-width: 18px;
+    --bs-accordion-btn-icon-height: 18px;
+  }
+
+  .accordion-body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .custom-footer {
+    padding: 30px 15px;
+    gap: 50px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .learning .section-title {
+    margin-bottom: 50px;
+  }
+
+  .fixed-image {
+    max-width: 300px;
+  }
+
+  .div-block-9 .section-title {
+    font-size: 28px;
+    max-width: 90%;
+  }
+
+  .learning-card-wrapper {
+    display: block;
+  }
+
+  .learning-card {
+    max-width: 100%;
     margin-bottom: 20px;
     padding: 20px;
   }
@@ -1592,4 +1812,4 @@
     font-size: 24px;
     max-width: 90%;
   }
-}
+} */
