@@ -841,6 +841,120 @@
   margin-top: 4px;
 }
 
+.our-values {
+  background: #fffaef;
+  padding-top: 83px;
+  padding-bottom: 105px;
+}
+
+.our-values-container {
+  max-width: 1245px;
+  width: 100%;
+  margin: auto;
+}
+
+.our-value-header-content {
+  max-width: 635px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.our-value-header {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.our-value-header-content h2 {
+  color: #323232;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -2px;
+  margin-bottom: 18px;
+}
+
+.our-value-header-content p {
+  color: #323232;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.our-value-header-img {
+  max-width: 225px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -8px;
+  right: -30px;
+}
+
+.our-value-header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.value-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 54px;
+  column-gap: 50px;
+}
+
+.value-card {
+  padding: 0 18px;
+  border-radius: 15px;
+  height: 379px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.value-card:nth-child(1) {
+  background: #e8ffaa;
+}
+.value-card:nth-child(2) {
+  background: #bff2ff;
+}
+.value-card:nth-child(3) {
+  background: #ffbfc9;
+}
+.value-card:nth-child(4) {
+  background: #bfcdff;
+}
+.value-card:nth-child(5) {
+  background: #ffd1bf;
+}
+.value-card:nth-child(6) {
+  background: #ffe5ae;
+}
+
+.value-card .card-title {
+  color: #323232;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+
+.value-card .card-desc {
+  color: #323232;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
 /* about us */
 
 /* Responsive Styles */
