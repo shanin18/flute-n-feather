@@ -10,4 +10,10 @@ $(document).ready(function () {
   lenis.on("scroll", (e) => {
     // console.log(e);
   });
+
+  AOS.init({
+    duration: 1000,
+    easing: "ease",
+    once: true,
+  });
 });

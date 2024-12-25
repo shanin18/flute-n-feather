@@ -1,48 +1,48 @@
 /* Adding Arial Font Variants */
-/* @font-face {
+@font-face {
   font-family: "Arial Black";
-  src: url("../arial-font/Arial Black.ttf") format("truetype");
+  src: url("../../arial-font/Arial Black.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Bold";
-  src: url("../arial-font/Arial Bold.ttf") format("truetype");
+  src: url("../../arial-font/Arial Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Bold Italic";
-  src: url("../arial-font/Arial Bold Italic.ttf") format("truetype");
+  src: url("../../arial-font/Arial Bold Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Italic";
-  src: url("../arial-font/Arial Italic.ttf") format("truetype");
+  src: url("../../arial-font/Arial Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Narrow";
-  src: url("../arial-font/Arial Narrow.ttf") format("truetype");
+  src: url("../../arial-font/Arial Narrow.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Narrow Bold";
-  src: url("../arial-font/Arial Narrow Bold.ttf") format("truetype");
+  src: url("../../arial-font/Arial Narrow Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Narrow Italic";
-  src: url("../arial-font/Arial Narrow Italic.ttf") format("truetype");
+  src: url("../../arial-font/Arial Narrow Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Rounded Bold";
-  src: url("../arial-font/Arial Rounded Bold.ttf") format("truetype");
+  src: url("../../arial-font/Arial Rounded Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Arial Unicode";
-  src: url("../arial-font/Arial Unicode.ttf") format("truetype");
-} */
+  src: url("../../arial-font/Arial Unicode.ttf") format("truetype");
+}
 
 @font-face {
   font-family: "Arial";
