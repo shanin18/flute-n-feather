@@ -141,6 +141,7 @@
   width: 100%;
   padding-top: 72px;
   padding-bottom: 72px;
+  overflow: hidden;
 }
 
 .banner-text {
@@ -583,6 +584,7 @@
 
 .section_home_stats {
   margin-top: 58px;
+  overflow: hidden;
 }
 
 .div-block-9 .section-title {
@@ -644,6 +646,7 @@
   align-items: center;
   position: sticky;
   top: 100px;
+  overflow: hidden;
 }
 
 .learning-card:nth-child(2) {
@@ -697,6 +700,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .about-us-bg-left {
@@ -770,6 +774,7 @@
   display: flex;
   align-items: center;
   gap: 26px;
+  overflow: hidden;
 }
 
 .empower-header-img {
@@ -834,6 +839,7 @@
   position: relative;
   padding-top: 83px;
   padding-bottom: 63px;
+  overflow: hidden;
 }
 
 .team-left-bg {
@@ -944,6 +950,7 @@
   background: #fffaef;
   padding-top: 83px;
   padding-bottom: 105px;
+  overflow: hidden;
 }
 
 .our-values-container {
@@ -1366,6 +1373,7 @@
 
   .custom-section {
     padding: 80px 0;
+    overflow: hidden;
   }
 
   .content-container {
