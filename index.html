@@ -814,7 +814,9 @@
           loop: true,
           autoplay: true,
           autoplayTimeout: 3000,
+          smartSpeed: 800,
           nav: true,
+          dots: false,
           navText: [
             '<span class="owl-prev-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M8.33206 14.999L15.086 21.665M8.33206 14.999L15.086 8.33301M8.33206 14.999H21.6641" stroke="#323232" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="15" r="14.5" transform="matrix(-1 0 0 1 30 0)" stroke="#323232"/></svg></span>',
             '<span class="owl-next-btn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M21.6679 14.999L14.914 21.665M21.6679 14.999L14.914 8.33301M21.6679 14.999H8.33594" stroke="#323232" stroke-linecap="round" stroke-linejoin="round"/><circle cx="15" cy="15" r="14.5" stroke="#323232"/></svg></span>',
@@ -822,9 +824,13 @@
           responsive: {
             0: {
               items: 1,
+              dots: true,
+              nav: false,
             },
             768: {
               items: 2,
+              dots: false,
+              nav: true,
             },
           },
         });
