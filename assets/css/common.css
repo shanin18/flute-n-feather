@@ -1,5 +1,5 @@
 /* Adding Arial Font Variants */
-@font-face {
+/* @font-face {
   font-family: "Arial Black";
   src: url("../arial-font/Arial Black.ttf") format("truetype");
 }
@@ -42,11 +42,11 @@
 @font-face {
   font-family: "Arial Unicode";
   src: url("../arial-font/Arial Unicode.ttf") format("truetype");
-}
+} */
 
 @font-face {
   font-family: "Arial";
-  src: url("../arial-font/Arial.ttf") format("truetype");
+  src: url("../../arial-font/Arial.ttf") format("truetype");
 }
 
 html,

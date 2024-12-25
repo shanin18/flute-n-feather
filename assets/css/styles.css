@@ -167,7 +167,7 @@
   text-transform: uppercase;
 }
 
-.heading {
+.banner .heading {
   font-size: 50px;
   font-weight: bold;
   line-height: 115%;
@@ -179,8 +179,9 @@
 
 .description {
   max-width: 500px;
-  font-size: 1.125rem;
-  line-height: 130%;
+  color: #323232;
+  font-size: 18px;
+  line-height: 160%;
 }
 
 .banner-image {
@@ -352,8 +353,6 @@
 }
 
 .testimonial-section {
-  margin: 0 auto;
-  text-align: center;
   padding: 108px 0;
   background: #fff8eb;
 }
@@ -379,30 +378,31 @@
   display: flex;
   flex-direction: column;
   gap: 17px;
+  min-height: 420px;
 }
 
-.testimonial-card:nth-child(1) {
+.card-one {
   background: #e8ffaa;
 }
-.testimonial-card:nth-child(2) {
+.card-two {
   background: #bff2ff;
 }
-.testimonial-card:nth-child(3) {
+.card-three {
   background: #ffbfc9;
 }
-.testimonial-card:nth-child(4) {
+.card-four {
   background: #bfcdff;
 }
-.testimonial-card:nth-child(5) {
+.card-five{
   background: #ffd1bf;
 }
-.testimonial-card:nth-child(6) {
+.card-six {
   background: #ffe5ae;
 }
 
 .testimonial-text {
   color: #323232;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 160%;
 }
@@ -412,6 +412,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 160%;
+  font-family: "Arial";
 }
 
 .owl-nav {
@@ -587,16 +588,17 @@
   object-fit: cover;
 }
 
+.section_home_stats {
+  margin-top: 58px;
+}
+
 .div-block-9 .section-title {
   color: #323232;
   text-align: center;
-  font-family: Arial;
   font-size: 40px;
-  font-style: normal;
   font-weight: 700;
   line-height: 115%;
   max-width: 768px;
-  margin: auto;
 }
 
 .stats_border._2 {
@@ -634,6 +636,7 @@
   /* display: none; */
   position: relative;
   padding: 100px 0;
+  border-bottom: 2px solid #323232;;
 }
 
 .learning-card {
@@ -1122,7 +1125,7 @@
   }
 
   .learning-card-wrapper {
-    padding: 80px 0;
+    padding: 80px 16px;
   }
 
   .learning-card {
@@ -1246,7 +1249,7 @@
   }
 
   .learning-card-wrapper {
-    padding: 60px 0;
+    padding: 60px 16px;
   }
 
   .learning-card img {
@@ -1255,10 +1258,6 @@
 
   .learning-card h2 {
     font-size: 28px;
-  }
-
-  .learning-card p {
-    font-size: 17px;
   }
 
   .navbar {
@@ -1278,7 +1277,7 @@
     margin-right: auto;
   }
 
-  .heading {
+  .banner .heading {
     font-size: 36px;
     max-width: 550px;
     letter-spacing: 0;
@@ -1286,7 +1285,6 @@
 
   .description {
     max-width: 450px;
-    font-size: 1rem;
   }
 
   .banner-image {
@@ -1342,17 +1340,13 @@
     padding: 15px;
     margin: 8px;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
 
   .testimonial-text {
-    font-size: 18px;
+    font-size: 24px;
   }
 
-  .testimonial-author {
-    font-size: 16px;
-  }
   /* testimonial ends */
 
   .custom-section {
@@ -1507,11 +1501,11 @@
   }
 
   .learning-card-wrapper {
-    padding: 50px 0;
+    padding: 55px 16px;
   }
 
   .learning-card img {
-    max-width: 300px;
+    max-width: 310px;
   }
 
   .navbar {
@@ -1540,14 +1534,13 @@
     gap: 30px;
   }
 
-  .heading {
+  .banner .heading {
     font-size: 30px;
     max-width: 450px;
   }
 
   .description {
     max-width: 400px;
-    font-size: 1rem;
   }
 
   .banner-image {
@@ -1603,20 +1596,13 @@
   }
 
   .testimonial-card {
-    padding: 16px;
+    padding: 40px 32px 49px 16px;
     margin: 5px;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 16px;
+    min-height: 350px;
   }
 
-  .testimonial-text {
-    font-size: 16px;
-  }
-
-  .testimonial-author {
-    font-size: 14px;
-  }
   /* testimonial ends */
 
   .custom-section {
@@ -1694,10 +1680,6 @@
 }
 
 @media (max-width: 685px) {
-  .learning-card-wrapper {
-    padding: 40px 0;
-  }
-
   .learning-card {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -1733,10 +1715,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .learning-card-wrapper {
-    padding: 30px 0;
-  }
-
   .learning-card img {
     max-width: 100%;
     max-height: auto;
@@ -1744,15 +1722,7 @@
 
   .learning-card h2 {
     font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.5px;
-  }
-
-  .learning-card p {
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    max-width: 305px;
   }
 
   .navbar {
@@ -1780,17 +1750,16 @@
   }
 
   .banner-text {
-    gap: 24px;
+    gap: 20px;
   }
 
-  .heading {
-    font-size: 24px;
-    max-width: 350px;
+  .banner .heading {
+    max-width: 355px;
+    font-size: 38px;
   }
 
   .description {
-    max-width: 350px;
-    font-size: 1rem;
+    max-width: 335px;
   }
 
   .banner-image {
@@ -1823,11 +1792,11 @@
   }
 
   .section-title {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .testimonial-section {
-    padding: 40px 0;
+    padding: 54px 0 57px;
   }
 
   .testimonial-title {
@@ -1842,15 +1811,7 @@
   .testimonial-card {
     margin: 5px;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial-text {
-    font-size: 14px;
-  }
-
-  .testimonial-author {
-    font-size: 14px;
+    min-height: 420px;
   }
 
   .custom-section {
@@ -1927,12 +1888,9 @@
     max-width: 90%;
   }
 
-  .learning-card-wrapper {
-    display: block;
-  }
-
   .learning-card {
     max-width: 100%;
+    gap: 27px;
     margin-bottom: 20px;
     padding: 20px;
   }
@@ -1951,10 +1909,11 @@
   }
 
   .learning-card p {
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    max-width: 295px;
+  }
+
+  .subheading {
+    display: none;
   }
 }
 
