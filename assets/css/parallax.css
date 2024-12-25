@@ -1917,10 +1917,7 @@
 .rl-styleguide_spacing {
   border: 1px dashed var(--border-color--border-primary);
 }
-.padding-global {
-  padding-left: 5%;
-  padding-right: 5%;
-}
+
 .padding-section-medium {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -3072,7 +3069,8 @@
   z-index: 2;
   padding-bottom: 1rem;
   position: sticky;
-  top: 20px;
+  top: 84px;
+  background: #fff;
 }
 .div-block-9.in-plans {
   position: relative;
@@ -5075,10 +5073,7 @@
     margin-left: 1rem;
     padding: 2rem 1.25rem;
   }
-  .padding-global {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
+
   .padding-global.except-mobile {
     padding-left: 0;
     padding-right: 0;
@@ -5308,7 +5303,6 @@
   }
   .div-block-9 {
     z-index: 2;
-    padding-top: 4rem;
     padding-bottom: 1rem;
     position: sticky;
     top: 0;

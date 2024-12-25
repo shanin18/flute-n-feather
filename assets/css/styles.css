@@ -1650,6 +1650,9 @@
     font-size: 32px; /* Adjust for smaller tablets */
     max-width: 520px;
   }
+  .div-block-9 {
+    top: 73px !important;
+  }
 }
 
 @media (max-width: 685px) {
@@ -1660,6 +1663,10 @@
 }
 
 @media (max-width: 480px) {
+  .stats10_background-image-wrapper img {
+    max-width: 290px !important;
+  }
+
   .about-us-banner-content {
     max-width: 355px;
   }
