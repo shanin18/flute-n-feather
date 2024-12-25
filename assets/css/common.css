@@ -1,7 +1,53 @@
-/* google fonts */
-/* inter */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-/* google fonts */
+/* Adding Arial Font Variants */
+@font-face {
+  font-family: "Arial Black";
+  src: url("../arial-font/Arial Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Bold";
+  src: url("../arial-font/Arial Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Bold Italic";
+  src: url("../arial-font/Arial Bold Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Italic";
+  src: url("../arial-font/Arial Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Narrow";
+  src: url("../arial-font/Arial Narrow.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Narrow Bold";
+  src: url("../arial-font/Arial Narrow Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Narrow Italic";
+  src: url("../arial-font/Arial Narrow Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Rounded Bold";
+  src: url("../arial-font/Arial Rounded Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial Unicode";
+  src: url("../arial-font/Arial Unicode.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url("../arial-font/Arial.ttf") format("truetype");
+}
 
 html,
 body,
@@ -49,7 +95,7 @@ select:focus {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Arial", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
   scroll-behavior: smooth;

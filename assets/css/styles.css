@@ -30,6 +30,10 @@
   justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 14px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -351,7 +355,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 108px 0;
-  background-color: #bff2ff;
+  background: #fff8eb;
 }
 
 .testimonial-title {
@@ -367,28 +371,33 @@
 }
 
 .testimonial-card {
-  background-color: #fff8eb;
   border-radius: 15px;
-  padding: 20px;
+  padding: 20px 50px 50px 40px;
   margin: 10px;
   text-align: left;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: flex-start;
-  gap: 33px;
+  flex-direction: column;
+  gap: 17px;
 }
 
-.testimonial-image {
-  min-width: 310px;
-  height: 386px;
-  overflow: hidden;
-  border-radius: 15px;
+.testimonial-card:nth-child(1) {
+  background: #e8ffaa;
 }
-
-.testimonial-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.testimonial-card:nth-child(2) {
+  background: #bff2ff;
+}
+.testimonial-card:nth-child(3) {
+  background: #ffbfc9;
+}
+.testimonial-card:nth-child(4) {
+  background: #bfcdff;
+}
+.testimonial-card:nth-child(5) {
+  background: #ffd1bf;
+}
+.testimonial-card:nth-child(6) {
+  background: #ffe5ae;
 }
 
 .testimonial-text {
@@ -396,7 +405,6 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 160%;
-  margin-bottom: 14px;
 }
 
 .testimonial-author {
@@ -623,11 +631,9 @@
 }
 
 .learning-card-wrapper {
-  display: none;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  /* display: none; */
   position: relative;
+  padding: 100px 0;
 }
 
 .learning-card {
@@ -635,9 +641,11 @@
   border-radius: 15px;
   background: #eeffbf;
   margin: auto;
-  padding: 30px;
+  padding: 40px 40px 40px 70px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
   position: sticky;
   top: 0;
 }
@@ -652,6 +660,11 @@
   background-color: #ffd1bf;
 }
 
+.learning-card-info {
+  max-width: 499px;
+  width: 100%;
+}
+
 .learning-card img {
   max-width: 499px;
   max-height: 510px;
@@ -663,21 +676,18 @@
 
 .learning-card h2 {
   color: #323232;
-  font-family: Arial;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%; /* 38.4px */
+  line-height: 120%;
   letter-spacing: -0.64px;
 }
 
 .learning-card p {
   color: #323232;
-  font-family: Arial;
   font-size: 18px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 130%; /* 23.4px */
+  line-height: 130%;
   margin-bottom: 22px;
   margin-top: 16px;
 }
@@ -889,8 +899,9 @@
   max-width: 853px;
   width: 100%;
   margin: 90px auto 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 60px;
   column-gap: 45px;
 }
@@ -898,13 +909,16 @@
 .team-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  min-width: 242px;
+  max-width: 242px;
 }
 
 .card-img {
   max-width: 242px;
   width: 100%;
 }
-.card-img {
+.card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -970,7 +984,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 130%;
+  line-height: 150%;
 }
 
 .our-value-header-img {
@@ -1048,13 +1062,205 @@
 
 /* Responsive Styles */
 
+@media (max-width: 1450px) {
+  .team-right-bg {
+    max-width: 250px;
+  }
+}
+
 @media (max-width: 1350px) {
-  .testimonial-card {
-    flex-direction: column;
+  .about-us-bg-left {
+    max-width: 300px;
+  }
+
+  .about-us-bg-right {
+    max-width: 280px;
+  }
+
+  .about-us-banner-content {
+    max-width: 500px;
+  }
+
+  .about-us-banner-content h1 {
+    font-size: 44px;
+  }
+
+  .empower-header-img {
+    max-width: 200px;
+  }
+
+  .empower-header h2 {
+    font-size: 44px;
+    max-width: 520px;
+  }
+
+  .team-left-bg {
+    max-width: 250px;
+  }
+
+  .team-right-bg {
+    display: none;
+  }
+
+  .team-header {
+    max-width: 500px;
+  }
+
+  .team-header h2 {
+    font-size: 44px;
+  }
+
+  .team-cards-wrapper {
+    max-width: 800px;
+    margin: 60px auto 0;
+    row-gap: 34px;
+    column-gap: 25px;
+  }
+
+  .our-value-header-content h2 {
+    font-size: 44px;
+  }
+
+  .learning-card-wrapper {
+    padding: 80px 0;
+  }
+
+  .learning-card {
+    padding: 30px;
+  }
+
+  .learning-card img {
+    max-width: 400px;
+  }
+
+  .our-value-header-img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -8px;
+    right: 0px;
+  }
+
+  .value-cards-wrapper {
+    row-gap: 34px;
+    column-gap: 30px;
+    margin: 0 16px;
   }
 }
 
 @media (max-width: 1024px) {
+  .about-us-banner {
+    height: 390px;
+  }
+
+  .about-us-bg-left {
+    max-width: 200px;
+  }
+
+  .about-us-bg-right {
+    max-width: 200px;
+  }
+
+  .about-us-banner-content {
+    max-width: 480px;
+  }
+
+  .about-us-banner-content h1 {
+    font-size: 38px;
+  }
+
+  .empower {
+    max-width: 1180px;
+    width: 100%;
+    margin: 70px auto;
+    padding: 52px 34px;
+  }
+
+  .empower-header-img {
+    max-width: 150px;
+  }
+
+  .empower-header h2 {
+    font-size: 36px;
+  }
+
+  .empower-content-img {
+    max-height: 100%;
+  }
+
+  .team {
+    padding-top: 58px;
+    padding-bottom: 52px;
+  }
+
+  .team-left-bg {
+    max-width: 200px;
+  }
+
+  .team-header h2 {
+    font-size: 36px;
+  }
+
+  .team-cards-wrapper {
+    max-width: 765px;
+    margin: 50px auto 0;
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+
+  .our-values {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .our-value-header-content h2 {
+    font-size: 36px;
+  }
+
+  .our-value-header-content p {
+    margin-bottom: 11px;
+    padding: 20px;
+  }
+
+  .our-value-header {
+    padding: 0;
+  }
+
+  .our-value-header-img {
+    max-width: 180px;
+    position: static;
+    margin-left: auto;
+    margin-bottom: -10px;
+  }
+
+  .value-card .card-title {
+    font-size: 28px;
+  }
+  .value-card {
+    height: 330px;
+  }
+
+  .value-cards-wrapper {
+    gap: 20px;
+  }
+
+  .learning-card-wrapper {
+    padding: 60px 0;
+  }
+
+  .learning-card img {
+    max-width: 350px;
+  }
+
+  .learning-card h2 {
+    font-size: 28px;
+  }
+
+  .learning-card p {
+    font-size: 17px;
+  }
+
   .navbar {
     padding-left: 40px;
     padding-right: 40px;
@@ -1218,33 +1424,94 @@
   }
 }
 
+@media (max-width: 865px) {
+  .team-left-bg {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
+  .about-us-banner {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .about-us-banner-content {
+    margin: 68px 0 0;
+    padding: 0 20px;
+  }
+
+  .about-us-banner-content h1 {
+    text-align: left;
+  }
+
+  .about-us-banner-content p {
+    text-align: left;
+  }
+
+  .about-us-bg-left {
+    display: none;
+  }
+
+  .about-us-bg-right {
+    position: static;
+    margin-left: auto;
+  }
+
+  .empower {
+    margin: 58px auto;
+    padding: 45px 24px 50px;
+  }
+
+  .empower-header-img {
+    max-width: 130px;
+  }
+
+  .empower-header h2 {
+    font-size: 32px;
+  }
+
+  .empower-description {
+    gap: 35px;
+    margin-top: 45px;
+  }
+
+  .empower-description p {
+    font-size: 20px;
+  }
+
+  .team-header h2 {
+    font-size: 32px;
+  }
+
+  .our-values {
+    padding-top: 50px;
+  }
+
+  .our-value-header-content h2 {
+    font-size: 32px;
+  }
+
+  .value-cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value-card .card-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
   .content-wrapper {
     display: none;
   }
 
   .learning-card-wrapper {
-    display: flex;
+    padding: 50px 0;
   }
 
   .learning-card img {
-    max-width: 100%;
-    max-height: none;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .learning-card h2 {
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -0.6px;
-  }
-
-  .learning-card p {
-    font-size: 17px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    margin-top: 14px;
+    max-width: 300px;
   }
 
   .navbar {
@@ -1426,12 +1693,53 @@
   }
 }
 
+@media (max-width: 685px) {
+  .learning-card-wrapper {
+    padding: 40px 0;
+  }
+
+  .learning-card {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
 @media (max-width: 480px) {
+  .about-us-banner-content {
+    max-width: 355px;
+  }
+
+  .about-us-bg-right {
+    max-width: 280px;
+    margin-top: 22px;
+  }
+
+  .empower-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .empower-header h2 {
+    max-width: 322px;
+  }
+
+  .our-value-header-content {
+    max-width: 100%;
+  }
+
+  .value-cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .learning-card-wrapper {
+    padding: 30px 0;
+  }
+
   .learning-card img {
-    width: 100%;
-    max-height: none;
-    height: auto;
-    margin-bottom: 15px;
+    max-width: 100%;
+    max-height: auto;
   }
 
   .learning-card h2 {

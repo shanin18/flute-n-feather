@@ -20,59 +20,57 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="/index.html" class="logo-container">
-          <img src="./assets/images/logo.png" class="logo" alt="logo" />
-        </a>
+    <nav class="navbar">
+      <a href="/index.html" class="logo-container">
+        <img src="./assets/images/logo.png" class="logo" alt="logo" />
+      </a>
 
-        <div class="nav-links">
-          <a class="nav-item" href="about-us.html">About Us</a>
-          <a href="#" class="btn-common">Try for Free</a>
-        </div>
-        <button class="menu-toggle" aria-label="Toggle menu">
-          <!-- open icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="menu-icon"
-            width="36"
-            height="36"
-            viewBox="0 0 36 36"
-            fill="none"
-          >
-            <path
-              d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
-              stroke="#323232"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <!-- close icon -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="close-icon"
-            width="31"
-            height="31"
-            viewBox="0 0 31 31"
-            fill="none"
-          >
-            <path
-              d="M23.7656 8.26546L8.26562 23.7655"
-              stroke="#323232"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <path
-              d="M7.23438 8.26659L22.7344 23.7666"
-              stroke="#323232"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-        </button>
-      </nav>
-    </header>
+      <div class="nav-links">
+        <a class="nav-item" href="about-us.html">About Us</a>
+        <a href="#" class="btn-common">Try for Free</a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <!-- open icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="menu-icon"
+          width="36"
+          height="36"
+          viewBox="0 0 36 36"
+          fill="none"
+        >
+          <path
+            d="M4.5 18H31.5M4.5 9H31.5M4.5 27H31.5"
+            stroke="#323232"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <!-- close icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="close-icon"
+          width="31"
+          height="31"
+          viewBox="0 0 31 31"
+          fill="none"
+        >
+          <path
+            d="M23.7656 8.26546L8.26562 23.7655"
+            stroke="#323232"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M7.23438 8.26659L22.7344 23.7666"
+            stroke="#323232"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </nav>
 
     <section class="banner">
       <div class="banner-text">
@@ -100,7 +98,7 @@
     </section>
 
     <!-- parallax scrolling -->
-    <section class="content-wrapper">
+    <!-- <section class="content-wrapper">
       <div class="content-left">
         <div class="content-left-text">
           <div class="content-info">
@@ -176,51 +174,59 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- parallax for mobile -->
     <section class="learning-card-wrapper">
       <div class="learning-card">
+        <div class="learning-card-info">
+          <h2>Inquiry-Based Learning for Growing Minds</h2>
+          <p>
+            Our platform sparks curiosity and critical thinking, helping kids
+            explore topics they love in an engaging way.
+          </p>
+
+          <a href="#" class="btn-common">Try for free</a>
+        </div>
         <img src="./assets/images/category-1.png" alt="img" />
-        <h2>Inquiry-Based Learning for Growing Minds</h2>
-        <p>
-          Our platform sparks curiosity and critical thinking, helping kids
-          explore topics they love in an engaging way.
-        </p>
-
-        <a href="#" class="btn-common">Try for free</a>
       </div>
       <div class="learning-card">
+        <div class="learning-card-info">
+          <h2>Parent-Controlled, Kid-Friendly AI</h2>
+          <p>
+            The Feather app lets parents monitor, customize, and ensure safe,
+            screen-limited learning for their kids.
+          </p>
+
+          <a href="#" class="btn-common">Try for free</a>
+        </div>
         <img src="./assets/images/category-2.png" alt="img" />
-        <h2>Parent-Controlled, Kid-Friendly AI</h2>
-        <p>
-          The Feather app lets parents monitor, customize, and ensure safe,
-          screen-limited learning for their kids.
-        </p>
-
-        <a href="#" class="btn-common">Try for free</a>
       </div>
 
       <div class="learning-card">
-        <img src="./assets/images/category-1.png" alt="img" />
-        <h2>Voice-Based, Hands-Free Exploration</h2>
-        <p>
-          Flute’s voice-first design lets kids navigate topics and ask questions
-          effortlessly, making learning intuitive and engaging.
-        </p>
+        <div class="learning-card-info">
+          <h2>Voice-Based, Hands-Free Exploration</h2>
+          <p>
+            Flute’s voice-first design lets kids navigate topics and ask
+            questions effortlessly, making learning intuitive and engaging.
+          </p>
 
-        <a href="#" class="btn-common">Try for free</a>
+          <a href="#" class="btn-common">Try for free</a>
+        </div>
+        <img src="./assets/images/category-3.png" alt="img" />
       </div>
 
       <div class="learning-card">
-        <img src="./assets/images/category-2.png" alt="img" />
-        <h2>Guided or Open-Ended Learning, Your Choice</h2>
-        <p>
-          Whether following guided lessons or exploring freely, Flute adapts to
-          your child’s learning style, empowering curiosity and creativity.
-        </p>
+        <div class="learning-card-info">
+          <h2>Guided or Open-Ended Learning, Your Choice</h2>
+          <p>
+            Whether following guided lessons or exploring freely, Flute adapts
+            to your child’s learning style, empowering curiosity and creativity.
+          </p>
 
-        <a href="#" class="btn-common">Try for free</a>
+          <a href="#" class="btn-common">Try for free</a>
+        </div>
+        <img src="./assets/images/category-4.png" alt="img" />
       </div>
     </section>
 
@@ -309,66 +315,55 @@
       <h2 class="section-title">What parents are saying</h2>
       <div class="testimonial-slider owl-carousel">
         <div class="testimonial-card">
-          <div class="testimonial-image">
-            <img src="./assets/images/review-1.png" alt="Parent and child" />
-          </div>
-
-          <div>
-            <p class="testimonial-text">
-              My 5-year-old loves Flute! The voice-based interaction makes it
-              easy for him to explore topics like dinosaurs and space without
-              needing constant supervision. It’s like having a personal tutor
-              that encourages his natural curiosity.
-            </p>
-            <p class="testimonial-author">Sarah M., Mom of 5-year-old</p>
-          </div>
+          <p class="testimonial-text">
+            “XianXian (6 years old), heard her dad talking about CyberTrucks.
+            She opens her favorite app Flute and asks it everything she wants to
+            know about it. Flute responds with jokes, stories and facts about
+            CyberTrucks.”
+          </p>
+          <p class="testimonial-author">Xian Xian · San Jose, CA</p>
         </div>
         <div class="testimonial-card">
-          <div class="testimonial-image">
-            <img src="./assets/images/review-2.png" alt="Parent and child" />
-          </div>
-
-          <div>
-            <p class="testimonial-text">
-              XianXian (6 years old), heard her dad talking about CyberTrucks.
-              She opens her favorite app Flute and asks it everything she wants
-              to know about it. Flute responds with jokes, stories, and facts
-              about CyberTrucks.
-            </p>
-            <p class="testimonial-author">Xian Xian · San Jose, CA</p>
-          </div>
+          <p class="testimonial-text">
+            "My 5-year-old loves Flute! The voice-based interaction makes it
+            easy for him to explore topics like dinosaurs and space without
+            needing constant supervision. It’s like having a personal tutor that
+            encourages his natural curiosity."
+          </p>
+          <p class="testimonial-author">– Sarah M., Mom of 5-year-old</p>
         </div>
         <div class="testimonial-card">
-          <div class="testimonial-image">
-            <img src="./assets/images/review-1.png" alt="Parent and child" />
-          </div>
-
-          <div>
-            <p class="testimonial-text">
-              XianXian (6 years old), heard her dad talking about CyberTrucks.
-              She opens her favorite app Flute and asks it everything she wants
-              to know about it. Flute responds with jokes, stories, and facts
-              about CyberTrucks.
-            </p>
-            <p class="testimonial-author">Xian Xian · San Jose, CA</p>
-          </div>
+          <p class="testimonial-text">
+            "As a parent, I love the Feather app. I can customize what my
+            daughter learns and track her progress. Knowing I can control the
+            content and screen time gives me complete peace of mind."
+          </p>
+          <p class="testimonial-author">– John K., Dad of 6-year-old</p>
         </div>
         <div class="testimonial-card">
-          <div class="testimonial-image">
-            <img src="./assets/images/review-2.png" alt="Parent and child" />
-          </div>
-
-          <div>
-            <p class="testimonial-text">
-              XianXian (6 years old), heard her dad talking about CyberTrucks.
-              She opens her favorite app Flute and asks it everything she wants
-              to know about it. Flute responds with jokes, stories, and facts
-              about CyberTrucks.
-            </p>
-            <p class="testimonial-author">Xian Xian · San Jose, CA</p>
-          </div>
+          <p class="testimonial-text">
+            "Flute strikes the perfect balance between structured lessons and
+            free exploration. My son enjoys both completing guided activities
+            and asking random questions—it keeps him engaged for hours."
+          </p>
+          <p class="testimonial-author">– Priya T., Mom of 4-year-old</p>
         </div>
-        <!-- Add more cards here -->
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "Finally, a learning tool that isn’t all about staring at a screen!
+            The voice-first approach makes learning more natural, and the
+            limited screen use is a huge plus for our family."
+          </p>
+          <p class="testimonial-author">– Emily R., Parent of 3-year-old</p>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            "My daughter loves the interactive stories and jokes! Flute isn’t
+            just educational—it’s fun too. It’s amazing to see her so excited
+            about learning."
+          </p>
+          <p class="testimonial-author">– Mark L., Dad of 7-year-old</p>
+        </div>
       </div>
     </section>
     <section class="custom-section">
@@ -630,7 +625,6 @@
         </div>
       </div>
     </section>
-
     <!-- footer starts -->
     <footer class="custom-footer">
       <div class="footer-top">
