@@ -1751,7 +1751,7 @@
   .banner {
     padding-left: 12px;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 
   .banner-text {
